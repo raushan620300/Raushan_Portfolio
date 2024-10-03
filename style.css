@@ -1,0 +1,1050 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    padding: 12px;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(200%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    color: white;
+    transition: 0.5s;
+}
+
+/* Home Container-1 */
+.container-1 {
+    width: 100%;
+    height: 640px;
+    background-image: url(Images/container-1\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 7px 5px grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 70px 50px;
+    
+}
+
+.home .user-img>img {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 65px;
+}
+
+.home section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.home h2 {
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.home .span1, .span2 {
+    color: rgb(2, 178, 248);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.home p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.home-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.home-links .fa-brands {
+    font-size: 2.3rem;
+}
+
+.home-links .fa-brands:hover {
+    opacity: 0.6;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-linkedin {
+    color: rgb(57, 57, 196);
+}
+
+.home-resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-resume a {
+    text-decoration: none;
+}
+
+.home-resume  {
+    font-size: 2.3rem;
+}
+
+@keyframes fa-circle-arrow-right {
+    0% {
+        color: black;
+        transform: rotate(0deg);
+    }
+    50% {
+        color: gold;
+        transform: rotate(180deg);
+    }
+    100% {
+        color: blue;
+        transform: rotate(360deg);
+    }
+}
+
+.home-resume .fa-circle-arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fa-circle-arrow-right 3s linear;
+}
+
+.home-resume button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: rgb(38, 0, 255);
+    color: whitesmoke;
+}
+
+.home-resume button:hover {
+    border: 2px solid snow;
+    background-color: black;
+    color: white;
+    transform: 0.3s;
+    box-shadow: 1px 2px 2px 0 whitesmoke;
+}
+
+/* Container 2 */
+.container-2 {
+    width: 100%;
+    height: 640px;
+    background: linear-gradient(to bottom right, #EFE9F4, #7d348b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.about {
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 60%;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px 2px #EFE9F4;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line;
+}
+
+.about section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    white-space: wrap;
+    padding: 10px 20px;
+}
+
+/* Container-3 */
+.container-3 {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom, #5b7fff, #33ccfc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container-3 .skills {
+    background-color: black;
+    color: white;
+    border: 4px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+    width: 80%;
+    height: 90%;
+}
+
+.skills #fa-cog1 {
+    font-size: 8rem;
+    animation: fa-cog1 3s linear infinite;
+}
+
+.skills #fa-cog2 {
+    font-size: 4rem;
+    animation: fa-cog1 2s linear infinite;
+}
+
+@keyframes fa-cog1 {
+    0% {
+        transform: rotate(0deg);
+        color: #20A4F3;
+    }
+    50% {
+        transform: rotate(90deg);
+        color: black;
+    }
+    80% {
+        transform: rotate(180deg);
+        color: #20A4F3;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: black;
+    }
+}
+
+.skills .skills-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #603f83;
+    border: 3px solid whitesmoke;
+    border-radius: 30px;
+    padding: 20px 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Container-4 */
+.container-4 {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #232325;
+    color: white;
+}
+
+.container-4 .projects span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container-4 .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.projects .project-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.project-list .project-1 {
+    background: linear-gradient(to bottom left, #9E20F2, #790be0);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 40px;
+    white-space: nowrap;
+}
+
+.project-list .project-2 {
+    background: linear-gradient(to bottom left, #9E20F2, #8112EB);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 60px;
+    white-space: nowrap;
+}
+
+.project-list .project-3 {
+    background: linear-gradient(to bottom left, #9E20F2, #8112EB);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 50px;
+    white-space: nowrap;
+}
+
+.project-list button {
+    background-color: #0b0111;
+    color: whitesmoke;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.project-list .project-1:hover {
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+
+.project-list .project-2:hover {
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+
+.project-list .project-3:hover {
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+
+.project-list button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* Container-5 */
+.container-5 {
+    width: 100%;
+    height: 680px;
+    background: #4a5f51;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container-5 form {
+    background-color: black;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 0px 4px 4px whitesmoke;
+}
+
+form h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+form input {
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    font-family: cursive;
+    outline: none;
+    border-width: 3px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+form input::placeholder {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+form textarea {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 15px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-width: 3px;
+    background-color: black;
+    color: whitesmoke;
+    outline: none;
+}
+
+form textarea::placeholder {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+form .form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.form-btn button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background-color: rgb(54, 54, 233);
+    border: none;
+    color: white;
+
+    &:hover {
+        background-color: #101923;
+    }
+}
+
+form p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+form .form-socialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+form .fa-brands {
+    font-size: 2rem;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+form .fa-instagram {
+    color: red;
+}
+
+form .fa-facebook {
+    color: blue;
+}
+
+form .fa-x-twitter {
+    color: whitesmoke;
+}
+
+/* container-6 */
+.container-6 {
+    width: 100%;
+    height: 300px;
+    background-color: #0b0111;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container-6 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    width: fit-content;
+}
+
+.contact-info .p1 {
+    text-decoration: underline;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    width: fit-content;
+}
+
+.social-links p {
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.social-links .footer-social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social-links .fa-brands {
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.portfolio-nav {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.portfolio-nav p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.portfolio-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+}
+
+.portfolio-nav ul li>a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+}
+
+/* Container-7 */
+.container-7 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #0b0111;
+    color: whitesmoke;
+}
+
+.container-7 footer p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media query for Container1 */
+@media only screen and (max-width: 767px) {
+    /* Top Navigation Bar */
+    nav {
+        width: 97%;
+        background-color: aqua;
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+
+    nav li a {
+        color: black;
+    }
+
+    nav ul li:hover {
+        background-color: #78c4bd;
+        transition: 0.5s;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        color: black;
+    }
+
+    nav img:hover {
+        cursor: none;
+    }
+
+    /* Container-1 */
+    .container-1 {
+      width: 97.1%;
+      height: 450px;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      gap: 1px;
+      padding: 12px 20px; 
+      margin: 1 auto; 
+      flex-wrap: nowrap;
+    }
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        white-space: wrap;
+    }
+    .home h1 {
+        font-size: 18px;
+    }
+    .home h2 {
+        font-size: 15px;
+    }
+    .home p {
+        font-size: 12px;
+        white-space: wrap;
+    }
+    .home-resume .fa-circle-arrow-right {
+        display: none;
+    }
+    .home-resume button {
+        padding: 1px 3px;
+        font-size: 1.5rem;
+        border: none;
+    }
+    .home-resume button:hover {
+        box-shadow: 1px 2px 2px 0 whitesmoke;
+    }
+    .home .user-img {
+        display: none;
+    }
+    .border-line1 {
+        background: linear-gradient(to bottom right, rgb(1, 1, 17), skyblue);
+        height: 5px;
+        width: 108%;
+    }
+
+     /* Container2 */
+    .container-2 {
+        width: 97%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        background: linear-gradient(to bottom right, #20A4F3, #182B3A);
+    }
+
+    .about {
+        background-color: black;
+        color: whitesmoke;
+        border: 2px solid black;
+        box-shadow: none;
+        padding: 5px 10px;
+    }
+
+    .about section {
+        font-size: 12px;
+        white-space: pre-line;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 50%;
+    }
+
+    /* Container-3 */
+    .container-3 {
+        width: 97%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .container-3 .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .skills-list ul li {
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+        padding: 20px 30px;
+    }
+ 
+    .skills .fa-cog {
+        display: none;
+    }
+
+    .border-line1 {
+        background: linear-gradient(to bottom right, rgb(1, 1, 17), skyblue);
+        height: 5px;
+        width: 100%;
+    }
+
+    /* Container-4 */
+    .container-4 {
+        width: 97%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .container-4 .projects .span3 {
+        font-size: 1rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: 600;
+    }
+
+    .container-4 .project-img img {
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container-4 .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .projects .project-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-list .project-1 {
+        padding: 20px 25px;
+    }
+
+    .project-list .project-2 {
+        padding: 20px 45px;
+    }
+
+    .project-list .project-3 {
+        padding: 20px 40px;
+    }
+
+    .project-list button {
+        border: none;
+    }
+
+    .border-line1 {
+        background: linear-gradient(to bottom right, rgb(1, 1, 17), skyblue);
+        height: 5px;
+        width: 108%;
+    }
+
+    /* Container -5 */
+    .container-5 {
+        width: 97%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .container-5 form {
+        width: 100px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 100px;
+    }
+
+    form h2 {
+        font-size: 16px;
+    }
+
+    form input::placeholder, textarea::placeholder {
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        filter: brightness(0.5);
+    }
+
+    form textarea::placeholder {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+    }
+
+    form .form-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-btn button {
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    form p {
+        font-size: 12px;
+    }
+
+    form .form-socialLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-socialLinks .fa-brands {
+        font-size: 20px;
+    }
+
+    .border-line1 {
+        background: linear-gradient(to bottom right, rgb(1, 1, 17), skyblue);
+        height: 5px;
+        width: 108%;
+    }
+
+    /* Container-6 */
+    .container-6 {
+        width: 97%;
+        height: 100%;
+        background-color: #21242a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        margin: auto;
+    }
+
+    .container-6 footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-info .p1 {
+        font-size: 16px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+    }
+
+    .portfolio-nav p {
+        font-size: 13px;
+    }
+
+    .social-links .p2 {
+        font-size: 16px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+ 
+    .footer-social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .portfolio-nav .p3 {
+        font-size: 16px;
+    }
+
+    .portfolio-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Container-7 */
+    .container-7 {
+        width: 97%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 20px 20px;
+    }
+
+    .container-7 footer p {
+        font-size: 12px;
+    }
+
+  }
+
+  
+   
